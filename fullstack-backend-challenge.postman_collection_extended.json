@@ -1,0 +1,146 @@
+{
+  "info": {
+    "_postman_id": "b0f890c6-5a0d-48a8-8e15-64b58c9f4a82",
+    "name": "fullstack-backend-challenge Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "27221639"
+  },
+  "item": [
+    {
+      "name": "Get Persons",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Person 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John-Jane Doe</name>\r\n\t<gender>t</gender>\r\n\t<age>23</age>\r\n  </person>\r\n</persons>"
+        },
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/add",
+        "description": "Adds a a XML-Payload containing persons"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Person 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John Doe Sr</name>\r\n\t<gender>m</gender>\r\n\t<age>53</age>\r\n  </person>\r\n  <person>\r\n    <name>John Doe</name>\r\n\t<gender>m</gender>\r\n\t<age>23</age>\r\n  <person>\r\n    <name>John Doe Jr</name>\r\n\t<gender>m</gender>\r\n\t<age>2</age>\r\n  </person>\r\n  </person>\r\n</persons>"
+        },
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/add",
+        "description": "Adds a a XML-Payload containing persons"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Person 3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>Jane Doe Sr</name>\r\n\t<gender>f</gender>\r\n\t<age>47</age>\r\n  </person>\r\n  <person>\r\n    <name>Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>17</age>\r\n  </person>\r\n</persons>"
+        },
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/add",
+        "description": "Adds a a XML-Payload containing persons"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Person 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>Jane Doe Sr</name>\r\n\t<gender>f</gender>\r\n\t<age>47</age>\r\n  </person>\r\n  <person>\r\n    <name>Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>17</age>\r\n  </person>\r\n</persons>"
+        },
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/add",
+        "description": "Adds a a XML-Payload containing persons"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Person 5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>Jane Doe Sr</name>\r\n\t<gender>f</gender>\r\n\t<age>47</age>\r\n  </person>\r\n  <person>\r\n    <name>Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>17</age>\r\n  </person>\r\n</persons>"
+        },
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/add",
+        "description": "Adds a a XML-Payload containing persons"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Statistics",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/statistics"
+      },
+      "response": []
+    },
+    {
+      "name": "Update Person",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<persons>\n<person>\n  <name>John Doe Updated</name>\n\t<gender>m</gender>\n\t<age>24</age>\n</person>\n</persons>"
+        },
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/2",
+        "description": "Updates a single person's details"
+      },
+      "response": []
+    },
+    {
+      "name": "Update Person - Invalid",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<persons>\n<person>\n  <name>John Doe Updated</name>\n\t<gender>x</gender>\n\t<age>24</age>\n</person>\n</persons>"
+        },
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/2",
+        "description": "Attempts to update a person with invalid data"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Person by ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/1",
+        "description": "Deletes a person by ID"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Person by ID invalid",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:8080/PersonManagementService-1.0-SNAPSHOT/api/persons/a",
+        "description": "Deletes a person by ID"
+      },
+      "response": []
+    }
+  ]
+}
